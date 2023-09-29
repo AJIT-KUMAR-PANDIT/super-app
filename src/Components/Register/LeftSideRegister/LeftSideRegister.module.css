@@ -1,0 +1,31 @@
+.Left-body {
+  background-image: url("../../../assets/images/registerPageImg1.svg");
+  width: 50%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: fit;
+}
+
+.Left-body-text {
+    width: 572px;
+  /* texts */
+  color: #fff;
+  font-family: Roboto;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 141.688%; /* 77.928px */
+  letter-spacing: 1.1px;
+
+  /* position */
+  position: absolute;
+  bottom: 49px;
+
+  /* center */
+
+  position: absolute;
+  left: 6vw;
+  /* transform: translate(-50%, -50%); */
+
+  
+}
