@@ -7,16 +7,16 @@ const RightSideRegister = () => {
       <div
         className={`${StylesRightSideRegister.container} ${StylesRightSideRegister.center}`}
       >
-        <div >
+        
           <div className={StylesRightSideRegister["super-app-text"]}>
             Super app
           </div>
           <div className={StylesRightSideRegister["text1"]}>
             Create your new account
           </div>
-          <Form />
+          <Form className={`${StylesRightSideRegister.compact}`}/>
         </div>
-      </div>
+    
     </>
   );
 };

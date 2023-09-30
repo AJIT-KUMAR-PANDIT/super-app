@@ -2,7 +2,7 @@
   border-radius: 1.75rem;
   background: #72db73;
 
-  width: 32.375rem;
+  width: 90%;
   height: 3.4375rem;
   flex-shrink: 0;
 }
@@ -11,12 +11,13 @@
   border-radius: 0.2385rem;
   background: #292929;
 
-  width: 32.375rem;
-  height: 3.05431rem;
+  /* width: 32.375rem; */
+  width: 90%;
+  height: 2.3rem;
   flex-shrink: 0;
 
   /* input text */
-  color: #7c7c7c;
+  color: #ffffff;
   font-family: DM Sans;
   font-size: 1.25206rem;
   font-style: normal;
