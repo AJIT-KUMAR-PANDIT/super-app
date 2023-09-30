@@ -1,0 +1,61 @@
+.green-button-sign-up {
+  border-radius: 1.75rem;
+  background: #72db73;
+
+  width: 32.375rem;
+  height: 3.4375rem;
+  flex-shrink: 0;
+}
+
+.inputStyle {
+  border-radius: 0.2385rem;
+  background: #292929;
+
+  width: 32.375rem;
+  height: 3.05431rem;
+  flex-shrink: 0;
+
+  /* input text */
+  color: #7c7c7c;
+  font-family: DM Sans;
+  font-size: 1.25206rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 1.749rem */
+  letter-spacing: 0.02506rem;
+}
+
+.checkBoxTxt {
+  color: #7c7c7c;
+  font-family: DM Sans;
+  font-size: 1.25206rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 1.749rem */
+  letter-spacing: 0.02506rem;
+}
+
+.text1 {
+  color: #7c7c7c;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 141.7%; /* 1.59413rem */
+  letter-spacing: 0.0225rem;
+
+  /*  */
+  width: 32.375rem;
+height: 3.3125rem;
+flex-shrink: 0;
+}
+
+.text1Green {
+  color: #72db73;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 141.7%;
+  letter-spacing: 0.0225rem;
+}
