@@ -1,23 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { redirect, useNavigate } from "react-router-dom";
 
 import StylesForm from "./Form.module.css";
 
 const Form = () => {
   const navigate = useNavigate();
+  const regestrationTF = useRef();
 
-  const storedData = JSON.parse(localStorage.getItem("data")) || {
-    name: "",
-    userName: "",
-    email: "",
-    mobile: "",
-    reg: false,
-  };
-  const [data, setData] = useState(storedData);
+  const [storedData, setStoredData] = useState(() => {
+    const value = JSON.parse(localStorage.getItem("data")) || {
+      name: "",
+      userName: "",
+      email: "",
+      mobile: "",
+    };
+    return value;
+  });
 
   useEffect(() => {
-    localStorage.setItem("data", JSON.stringify(data));
-  }, [data]);
+    localStorage.setItem("data", JSON.stringify(storedData));
+  }, [storedData]);
 
   // useEffect(() => {
   //   //function to be executed on page load
@@ -30,34 +32,52 @@ const Form = () => {
   // const navigate = useNavigate();
 
   useEffect(() => {
-    if (data.reg) {
-      navigate('/category'); // Redirect to category
+    if (localStorage.getItem("regestrationTrueOrFalse") === "true") {
+      navigate("/category"); // Redirect to category
+    } else {
+      console.log(
+        "regestrationTrueOrFalse not navi ",
+        localStorage.getItem("regestrationTrueOrFalse")
+      );
     }
   }, [navigate]);
 
   const [isError, setIsError] = useState(false);
-  const [name, setName] = useState("");
-  const [userName, setUserName] = useState("");
-  const [email, setEmail] = useState("");
-  const [mobile, setMobile] = useState("");
-  const [isChecked, setIsChecked] = useState(false);
-  const [reg, setReg] = useState(false);
+  const [name, setName] = useState(storedData.name);
+  const [userName, setUserName] = useState(storedData.userName);
+  const [email, setEmail] = useState(storedData.email);
+  const [mobile, setMobile] = useState(storedData.mobile);
+  const [isChecked, setIsChecked] = useState(storedData.check);
+  // const [regestrationTrueOrFalse, setRegestrationTrueOrFalse] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (handelError() === false) {
-      updateData();
-      console.log("set data reg before true ", data.reg);
-      
-      storedData.reg = true; 
-      console.log("set data reg after true ", data.reg);
+      // updateData();
+      // console.log("set data reg before true ", data.reg);
+
+      // data.reg = true;
+      // setReg(data.reg);
+      // console.log("set data reg after true ", data.reg);
+
+      // setName(e.target.value);
+      //
+
+      // useEffect(() => {
+      //   localStorage.setItem("reg", true);
+      // }, [reg]);
+
+      localStorage.setItem("regestrationTrueOrFalse", "true");
+
       navigate("/category");
     } else {
-      console.log("set data reg before false ", data.reg);
-      storedData.reg = false;
-      console.log("set data reg after false ", data.reg);
-      console.log("set data reg", data.reg);
+      // console.log("set data reg before false ", data.reg);
+      // data.reg = false;
+      // setReg(data.reg);
+      // console.log("set data reg after false ", data.reg);
+      // console.log("set data reg", data.reg);
+      localStorage.setItem("regestrationTrueOrFalse", "false");
     }
     // console.log("upadate data", data);
     // console.log(data.reg);
@@ -113,12 +133,17 @@ const Form = () => {
     return validUserNameRegex.test(userName);
   };
 
-  const updateData = () => {
-    data.name = name;
-    data.userName = userName;
-    data.email = email;
-    data.mobile = mobile;
-  };
+  // const updateData = () => {
+  //   setStoredData({
+  //     ...storedData,
+  //     name: name,
+  //     userName : userName,
+  //     email : email,
+  //     mobile : mobile,
+  //     reg:reg,
+  //   });
+  //   console.log(storedData);
+  // };
 
   return (
     <>
@@ -143,7 +168,13 @@ const Form = () => {
                 className={`${StylesForm.inputStyle}`}
                 type="text"
                 placeholder="Name"
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => {
+                  setName(e.target.value);
+                  setStoredData({
+                    ...storedData,
+                    name: e.target.value,
+                  });
+                }}
               />
             )}
             {isError && !isName(name) ? (
@@ -169,7 +200,13 @@ const Form = () => {
                 className={`${StylesForm.inputStyle}`}
                 type="text"
                 placeholder="UserName"
-                onChange={(e) => setUserName(e.target.value)}
+                onChange={(e) => {
+                  setUserName(e.target.value);
+                  setStoredData({
+                    ...storedData,
+                    userName: e.target.value,
+                  });
+                }}
               />
             )}
             {isError && !isUserNameValid(userName) ? (
@@ -188,7 +225,6 @@ const Form = () => {
                 className={`${StylesForm.inputStyle}, ${StylesForm.errorBox}`}
                 type="text"
                 placeholder="Email"
-                value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             ) : (
@@ -196,8 +232,13 @@ const Form = () => {
                 className={`${StylesForm.inputStyle}`}
                 type="text"
                 placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setStoredData({
+                    ...storedData,
+                    email: e.target.value,
+                  });
+                }}
               />
             )}
             {isError && !isValidEmail(email) ? (
@@ -223,7 +264,13 @@ const Form = () => {
                 className={`${StylesForm.inputStyle}`}
                 type="number"
                 placeholder="Mobile"
-                onChange={(e) => setMobile(e.target.value)}
+                onChange={(e) => {
+                  setMobile(e.target.value);
+                  setStoredData({
+                    ...storedData,
+                    mobile: e.target.value,
+                  });
+                }}
               />
             )}
             {isError && !isMobileValid(mobile) ? (
