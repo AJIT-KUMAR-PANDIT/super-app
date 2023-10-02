@@ -1,17 +1,31 @@
 .Left-body {
-  background-image: url("../../../assets/images/registerPageImg1.svg");
+  background-image: url("../../../assets/images/loading1.svg");
+  animation: background-animation 6s linear forwards;
   width: 50%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+@keyframes background-animation {
+  0% {
+    background-image: url("../../../assets/images/loading1.svg"); /* Initial background image */
+  }
+  50% {
+    background-image: url("../../../assets/images/loading1.svg"); /* Maintain the first image for 50% of the animation */
+  }
+  51% {
+    background-image: url("../../../assets/images/registerPageImg1.svg"),url("../../../assets/images/loading1.svg"); /* Switch to your second image at 51% */
+  }
+  100% {
+    background-image: url("../../../assets/images/registerPageImg1.svg"),url("../../../assets/images/loading1.svg"); /* Final background image */
+  }
+}
 .Left-body-text {
     width: 572px;
   /* texts */
   color: #fff;
   font-family: Roboto;
-  font-size: 55px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 900;
   line-height: 141.688%; /* 77.928px */

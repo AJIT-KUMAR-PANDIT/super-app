@@ -9,7 +9,7 @@
   /* text */
   color: #fff;
   font-family: Roboto;
-  font-size: 1.8125rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.96994rem;
@@ -19,18 +19,21 @@
 }
 
 .inputStyle {
-  border-radius: 0.2385rem;
+  /* border-radius: 0.2385rem;
+  background: #292929; */
+
+  border-radius: 3.816px;
   background: #292929;
 
   /* width: 32.375rem; */
   width: 90%;
-  height: 2rem;
+  height: 1.9rem;
   flex-shrink: 0;
 
   /* input text */
   color: #ffffff;
   font-family: DM Sans;
-  font-size: 1.25206rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 139.688%; /* 1.749rem */
@@ -42,7 +45,7 @@
 .checkBoxTxt {
   color: #7c7c7c;
   font-family: DM Sans;
-  font-size: 1.25206rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 139.688%; /* 1.749rem */
@@ -54,14 +57,14 @@
 .text1 {
   color: #7c7c7c;
   font-family: Roboto;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 141.7%; /* 1.59413rem */
   letter-spacing: 0.0225rem;
 
   /*  */
-  width: 32.375rem;
+  width: 29rem;
   height: 3.3125rem;
   flex-shrink: 0;
 }
@@ -69,7 +72,7 @@
 .text1Green {
   color: #72db73;
   font-family: Roboto;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 141.7%;
@@ -83,9 +86,32 @@
 .error {
   color: #f00;
   font-family: DM Sans;
-  font-size: 1.25206rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 139.688%; /* 1.749rem */
   letter-spacing: 0.02506rem;
+}
+
+.errorBox {
+  border: 1px solid red;
+
+  border-radius: 3.816px;
+  background: #292929;
+
+  /* width: 32.375rem; */
+  width: 90%;
+  height: 1.9rem;
+  flex-shrink: 0;
+
+  /* input text */
+  color: #ffffff;
+  font-family: DM Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 1.749rem */
+  letter-spacing: 0.02506rem;
+
+  cursor: pointer;
 }
