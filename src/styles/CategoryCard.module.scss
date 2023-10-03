@@ -1,0 +1,19 @@
+:root {
+    --background-color: #3498db;
+    --image: url("../assets/images/loading1.svg");
+  }
+
+.container{
+    width: 15.625rem;
+    height: 15.6875rem;
+    border-radius: 1.25rem;
+    background-color: var(--background-color);
+    flex-shrink: 0;
+}
+
+.imageDiv{
+    width: 11rem;
+    height: 11rem;
+    background-image: var(--image);
+    border-radius: 1.25rem;
+}

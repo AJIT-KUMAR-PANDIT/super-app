@@ -7,14 +7,17 @@ import { useState } from 'react';
 function App() {
 
   
-    const storedData = JSON.parse(localStorage.getItem("data")) || {
-      name: "",
-      userName: "",
-      email: "",
-      mobile: "",
-      reg:""
-    };
-    const [data, setData] = useState(storedData);
+    // const storedData = JSON.parse(localStorage.getItem("data")) || {
+    //   name: "",
+    //   userName: "",
+    //   email: "",
+    //   mobile: "",
+    //   reg:""
+    // };
+    // const [data, setData] = useState(storedData);
+
+    const RegisterTrueOrFalse = localStorage.getItem('regestrationTrueOrFalse');
+
 
   return (
     <>
@@ -22,9 +25,7 @@ function App() {
           <div>
             <Routes>
               <Route path="/" element={<Register />}  />
-              {/* {data.reg &&  */}
-              {/* <Route path="/category" element={<Category />} /> */}
-              {/* } */}
+             
            <Route path="/category" element={<Category />} />
               </Routes>
           </div>
