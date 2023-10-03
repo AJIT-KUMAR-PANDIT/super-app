@@ -2,46 +2,46 @@
     "card1": {
         "type": "Action",
         "color": "#FF5209",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%202.svg?token=ALXS3GQQKUZ5I7MAQWCIGJ3FDQUSU"
     },
     "card2": {
         "type": "Drama",
         "color": "#D7A4FF",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%203.svg?token=ALXS3GRXQCA6HGXTYSNDJW3FDQUVI"
     },
     "card3": {
         "type": "Romance",
         "color": "#148A08",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%204.svg?token=ALXS3GWITMIBNIS4DCNFCQLFDQU3U"
     },
     "card4": {
         "type": "Thriller",
         "color": "#84C2FF",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%206.svg?token=ALXS3GW2NZ2S5APIVCJHI63FDQVHK"
     },
     "card5": {
         "type": "Western",
         "color": "#902500",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%207.svg?token=ALXS3GSKCGLZ5ICOGN2NTILFDQVEU"
     },
     "card6": {
         "type": "Horror",
         "color": "#7358FF",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%208.svg?token=ALXS3GWALRPGRJ7WPSDJGETFDQVE2"
     },
     "card7": {
         "type": "Fantasy",
         "color": "#FF4ADE",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%209.svg?token=ALXS3GR3FBXDVAD6HJJ7KTDFDQVE6"
     },
     "card8": {
         "type": "Music",
         "color": "#E61E32",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%2010.svg?token=ALXS3GVJWGDB3S3F2LIWVZTFDQVFC"
     },
     "card9": {
         "type": "Fiction",
         "color": "#6CD061",
-        "image": "../assets/images/category/image 2.svg"
+        "image": "https://raw.githubusercontent.com/AJIT-KUMAR-PANDIT/super-app/92344f1fc7d20dd5f24ce75e1c67144397adbab9/src/assets/images/category/image%2011.svg?token=ALXS3GW7XY5DT43VAR7XFYLFDQVFG"
     }
 }
