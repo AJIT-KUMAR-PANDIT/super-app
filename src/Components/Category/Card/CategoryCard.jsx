@@ -1,10 +1,24 @@
 import StyleCategoryCard from "../../../styles/CategoryCard.module.scss";
-// import loading from "/images/loading1.svg";
+import { useState } from "react";
 
 const CategoryCard = (props) => {
   const { type, color, image } = props;
 
   const loading= "/images/loading1.svg";
+
+  const [borderColor, setBorderColor] = useState(StyleCategoryCard.inactive);
+
+  // const handleCardClick = () => {
+  //   setBorderColor(borderColor === "black" ? "red" : "black");
+  // };
+
+  const handleClick = () => {
+    (borderColor===StyleCategoryCard.inactive)?(
+    setBorderColor(StyleCategoryCard.active)
+    ):(
+      setBorderColor(StyleCategoryCard.inactive)
+    )
+  };
 
   // Dynamically update the CSS variable
   // document.documentElement.style.setProperty("--background-color", color);
@@ -21,7 +35,10 @@ const CategoryCard = (props) => {
       </div> */}
       <div
         style={{ backgroundColor: `${color}` }}
-        className={`${StyleCategoryCard.container}`}
+        className={`${StyleCategoryCard.container} ${borderColor}`}
+
+        onClick={handleClick} 
+        // style={{ borderColor }}
       >
         <div className={`${StyleCategoryCard.padding}`}>
           {type}

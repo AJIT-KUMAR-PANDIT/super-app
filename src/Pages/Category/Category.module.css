@@ -68,8 +68,3 @@ position: fixed;
 right: 10%;
 bottom: 10%;
 }
-
-.active{
-  border-radius: 1.25rem;
-  border: 6px solid #11B800;
-}
