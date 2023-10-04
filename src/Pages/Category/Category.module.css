@@ -33,3 +33,48 @@
   font-weight: 700;
   line-height: 139.688%; /* 5.93675rem */
 }
+
+.leftSide{
+    position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.rightSide{
+    position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.nextButton{
+  /* text */
+  color: #FFF;
+text-align: center;
+font-family: DM Sans;
+font-size: 1.64288rem;
+font-style: normal;
+font-weight: 500;
+line-height: 92.2%; /* 1.51469rem */
+letter-spacing: 0.03288rem;
+
+border-radius: 2.42856rem;
+background: #148A08;
+
+width: 11rem;
+height: 3rem;
+flex-shrink: 0;
+
+position: fixed;
+right: 10%;
+bottom: 10%;
+}
+
+/* .active{
+  
+background: #148A08;
+} */
+
+.active:onClick{
+  border-radius: 1.25rem;
+  border: 6px solid #11B800;
+}
