@@ -1,10 +1,15 @@
 import StyleCategory from "./Category.module.css";
 import CategoryJson from "../../datasets/category.json";
 import CategoryCard from "../../Components/Category/Card/CategoryCard";
+import { useState } from "react";
 
 const Category = () => {
   const Category_Data = JSON.parse(JSON.stringify(CategoryJson));
+  const [isActive, setIsActive] = useState(false);
 
+  const handleToggle = () => {
+    setIsActive(prevIsActive => !prevIsActive);
+  };
   return (
     <>
       <div className={`${StyleCategory.container}`}>
@@ -26,7 +31,7 @@ const Category = () => {
                 color={Category_Data.card1.color}
                 image={Category_Data.card1.image}
 
-                className={`${StyleCategory.active}`}
+               onClick={handleToggle}
 
                 // onClick={() => {
                 //   // className=`${StyleCategory.active}`

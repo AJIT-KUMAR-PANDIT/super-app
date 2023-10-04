@@ -69,12 +69,7 @@ right: 10%;
 bottom: 10%;
 }
 
-/* .active{
-  
-background: #148A08;
-} */
-
-.active:onClick{
+.active{
   border-radius: 1.25rem;
   border: 6px solid #11B800;
 }

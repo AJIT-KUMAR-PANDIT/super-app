@@ -1,7 +1,10 @@
 import StyleCategoryCard from "../../../styles/CategoryCard.module.scss";
+// import loading from "/images/loading1.svg";
 
 const CategoryCard = (props) => {
   const { type, color, image } = props;
+
+  const loading= "/images/loading1.svg";
 
   // Dynamically update the CSS variable
   // document.documentElement.style.setProperty("--background-color", color);
@@ -24,7 +27,7 @@ const CategoryCard = (props) => {
           {type}
           <br />
           <div
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url(${image}),url(${loading})` }}
             className={`${StyleCategoryCard.imageDiv}`}
           ></div>
         </div>
