@@ -1,0 +1,39 @@
+.container {
+  border-radius: 1.9375rem;
+  background: #148a08;
+
+  width: 11rem;
+  height: 2.3rem;
+  flex-shrink: 0;
+
+  /* text */
+  color: #fff;
+  font-family: Roboto;
+  /* font-size: 1.57144rem; */
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.688%; /* 1.66081rem */
+  letter-spacing: 0.03144rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5rem;
+  
+}
+
+.close:hover {
+    color: red;
+}
