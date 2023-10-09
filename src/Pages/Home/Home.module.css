@@ -1,9 +1,14 @@
 .container{
     padding: 3% 3% 3% 3%;
     display: flex;
+    
 }
 
 .news{
     position: absolute;
     right: 5%;
+}
+
+.notes{
+
 }
