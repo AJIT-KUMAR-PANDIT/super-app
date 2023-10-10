@@ -1,4 +1,4 @@
-import StyleNews from "./News.module.scss";
+import StyleNews from "../../../styles/News.module.scss";
 import React, { useState, useEffect } from "react";
 
 const keywords = ["bitcoin", "technology", "science", "business", "sports"];

@@ -1,4 +1,4 @@
-import StyleWeather from "./Weather.module.scss";
+import StyleWeather from "../../../styles/Weather.module.scss";
 import { useState, useEffect } from "react";
 
 const fetchData = async () => {
@@ -61,7 +61,7 @@ const Weather = () => {
           <div className={`${StyleWeather.celcius}`}>
             {celcius}<span>&deg;C</span>
             <br/>
-            <span className={`${StyleWeather.pressure}`}>{pressure} mbar<br/>Pressure</span>
+            <span className={`${StyleWeather.pressure}`}><img src="images/pressure.svg"/>{pressure} mbar Pressure</span>
           </div>
           <span className={`${StyleWeather.dividerLine}`}>&#124;</span>
           <div></div>
