@@ -15,8 +15,8 @@ const Weather = () => {
   const [weatherImage, setWeatherImage] = useState(null);
   const [celcius, setCelcius] = useState(0);
   const [pressure, setPressure] = useState(0);
-
-  
+  const [wind, setWind] = useState(0);
+  const [humidity, setHumidity] = useState(0);
 
   useEffect(() => {
     const fetchWeatherData = async () => {
@@ -27,6 +27,8 @@ const Weather = () => {
         setWeatherImage(settingWeather.condition.icon);
         setCelcius(settingWeather.temp_c);
         setPressure(settingWeather.pressure_mb);
+        setWind(settingWeather.wind_kph);
+        setHumidity(settingWeather.humidity);
       } catch (error) {
         console.error("Error fetching weather data: ", error);
       }
@@ -59,12 +61,39 @@ const Weather = () => {
           </div>
           <span className={`${StyleWeather.dividerLine}`}>&#124;</span>
           <div className={`${StyleWeather.celcius}`}>
-            {celcius}<span>&deg;C</span>
-            <br/>
-            <span className={`${StyleWeather.pressure}`}><img src="images/pressure.svg"/>{pressure} mbar Pressure</span>
+            {celcius}
+            <span>&deg;C</span>
+            <br />
+            <span className={`${StyleWeather.pressure}`}>
+              <img src="images/pressure.svg" style={{ width: "1vw" }} />
+              &nbsp;
+              <span className={`${StyleWeather.pressureText}`}>
+                {pressure} mbar Pressure
+              </span>
+            </span>
           </div>
           <span className={`${StyleWeather.dividerLine}`}>&#124;</span>
-          <div></div>
+          <div>
+            <br/>
+            <div className={`${StyleWeather.windHumidity}`}>
+             <div>
+              <img src="/images/wind.svg" style={{ width: "1vw" }}/>
+             <span> {wind} Km/h
+              <br />
+              Wind
+              </span>
+              </div>
+              <br/>
+              <div>
+              <img src="/images/Humidiy.svg" style={{ width: "1vw" }}/>
+             <span> {humidity} %
+              <br />
+              Humidiy
+              </span>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </>
