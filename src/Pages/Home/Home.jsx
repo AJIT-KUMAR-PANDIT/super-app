@@ -26,6 +26,7 @@ const Home = () => {
       <div className={`${StyleHome.timesPosition}`} >
         <Timer />
       </div>
+      <button className={`${StyleHome.browse}`}>Browse</button>
     </>
   );
 };

@@ -18,3 +18,14 @@
     position: relative;
     left: 3%;
 }
+
+.browse{
+    border-radius: 34.777px;
+background: #148A08;
+width: 11vw;
+height: 6vh;
+position: absolute;
+right: 5%;
+color: white;
+font-size: large;
+}
