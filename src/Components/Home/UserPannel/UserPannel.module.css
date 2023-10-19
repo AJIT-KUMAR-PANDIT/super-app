@@ -33,3 +33,7 @@
     position: relative;
     left: 6%;
 }
+
+body{
+  overflow-y: scroll;
+}

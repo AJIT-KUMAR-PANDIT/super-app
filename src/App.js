@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./Pages/Register/Register";
 import Category from "./Pages/Category/Category";
 import Home from "./Pages/Home/Home";
+import MoviesPage from "./Pages/Movies/MoviesPage";
 import { useState } from "react";
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
             <Route path="/category" element={<Category />} />
 
             <Route path="/home" element={<Home />} />
+
+            <Route path="/movies" element={<MoviesPage />} />
           </Routes>
         </div>
       </Router>

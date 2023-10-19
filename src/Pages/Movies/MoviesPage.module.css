@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "SingleDay-Regular";
+    src: url("../../assets/fonts/SingleDay-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .superapptext {
+    /* color: #72db73;
+    font-family: "SingleDay-Regular";
+    font-size: '47.333px';
+    font-style: 'normal';
+    font-Weight: '400';
+    line-Height: '139.688%';
+    margin: '0';
+    margin-Left: '20px'; */
+  }

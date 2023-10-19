@@ -4,8 +4,18 @@ import News from "../../Components/Home/News/News";
 import Notes from "../../Components/Home/Notes/Notes";
 import Weather from "../../Components/Home/Weather/Weather";
 import Timer from "../../Components/Home/Timer/Timer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+
+  const handleBrowse = ()=>{
+    navigate('/movies');
+  }
+
+
+
   return (
     <>
       <div className={`${StyleHome.container}`}>
@@ -26,7 +36,7 @@ const Home = () => {
       <div className={`${StyleHome.timesPosition}`} >
         <Timer />
       </div>
-      <button className={`${StyleHome.browse}`}>Browse</button>
+      <button className={`${StyleHome.browse}`} onClick={handleBrowse}>Browse</button>
     </>
   );
 };
